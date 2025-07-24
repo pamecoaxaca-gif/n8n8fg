@@ -1,0 +1,19 @@
+app = "n8n8fg"
+primary_region = "mia"
+
+[build]
+  dockerfile = "Dockerfile"
+
+[env]
+  N8N_BASIC_AUTH_ACTIVE = "true"
+  N8N_BASIC_AUTH_USER = "adm"
+  N8N_BASIC_AUTH_PASSWORD = "admn8"
+  TZ = "America/Mexico_City"
+
+[[mounts]]
+  source = "n8ndata"
+  destination = "/home/node/.n8n"
+
+[[mounts]]
+  source = "n8nbackup"
+  destination = "/home/node/backup"
