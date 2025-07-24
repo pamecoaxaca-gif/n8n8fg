@@ -1,0 +1,3 @@
+#!/bin/sh
+fly volumes create n8ndata --size 1 --region mia
+fly volumes create n8nbackup --size 1 --region 
